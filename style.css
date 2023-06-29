@@ -1,15 +1,18 @@
-*{
+*{                                                              
 padding: 0;
 margin: 0;
 font-family: 'poppins',sans-serif;
 box-sizing: border-box;
 }
+
+/* parent styling  container that contain whole body*/
 .container{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg,#477ccc,#c203f1);
     padding: 10px;
 }
+/* styling child container that contain todo list part */
 .Todo-app{
     width: 100%;
     max-width: 540px;
@@ -18,6 +21,7 @@ box-sizing: border-box;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
+/* to-do heading styling  */
 .Todo-app h2{
     color: #650011;
     display: flex;
@@ -28,6 +32,7 @@ box-sizing: border-box;
     width: 30px;
     margin-left: 10px;
 }
+/* styling text space for adding tasks  */
 .row{
     display: flex;
     align-items: center;
@@ -37,6 +42,7 @@ box-sizing: border-box;
     padding-left: 20px;
     margin-bottom: 25px;
 }
+/* input field for adding tasks  */
 input{
     flex:1;
     border: none;
@@ -45,6 +51,7 @@ input{
     padding:10px;
     font-size: 14px;
 }
+/*  styling Add button which ADDED tasks while click */
 button{
     border: none;
     outline: none;
@@ -63,6 +70,7 @@ ul li{
     cursor: pointer;
     position: relative;
 }
+/* adding uncheked image before list items with basic styling  */
 ul li::before{
     content: '';
     position: absolute;
@@ -79,9 +87,11 @@ ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
+/* adding checked logo for task which is completed styling  */
 ul li.checked::before{
     background-image: url(images/checked.png);
 }
+/* styling delete or X logo  */
 ul li span{
     position: absolute;
     right: 0;
